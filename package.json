@@ -1,0 +1,51 @@
+{
+    "name": "template_2022",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "server": "node server.js",
+        "prod": "webpack-cli --mode=production --env production",
+        "watch": "webpack-cli --watch",
+        "watch:prod": "webpack-cli --watch --env production",
+        "lint": "eslint src"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "browserslist": [
+        "cover 99.5% in RU"
+    ],
+    "devDependencies": {
+        "@babel/core": "^7.4.5",
+        "@babel/plugin-proposal-class-properties": "^7.4.4",
+        "@babel/preset-env": "^7.4.5",
+        "@svgr/webpack": "^5.5.0",
+        "autoprefixer": "^9.0.2",
+        "babel-eslint": "^10.0.1",
+        "babel-loader": "^8.0.6",
+        "babel-plugin-import": "^1.13.0",
+        "cross-env": "^7.0.3",
+        "css-loader": "^1.0.0",
+        "file-loader": "^3.0.1",
+        "html-webpack-plugin": "^4.0.0",
+        "html-webpack-pug-plugin": "^3.0.0",
+        "less": "^3.9.0",
+        "less-loader": "^5.0.0",
+        "mini-css-extract-plugin": "^0.7.0",
+        "node-sass": "^4.14.1",
+        "postcss-loader": "^2.1.6",
+        "pug": "^3.0.2",
+        "pug-loader": "^2.4.0",
+        "redux-devtools-extension": "^2.13.8",
+        "sass-loader": "^7.3.1",
+        "style-loader": "^0.21.0",
+        "webpack": "^4.20.2",
+        "webpack-cli": "^4.7.0",
+        "webpack-dev-middleware": "^3.7.0"
+    },
+    "dependencies": {
+        "jquery": "^3.3.1",
+        "jquery-mask-plugin": "^1.14.16"
+    }
+}

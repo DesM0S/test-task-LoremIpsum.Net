@@ -1,0 +1,11 @@
+mixin breadcrums
+    .breadcrums
+        .container
+
+html
+    include template/head.pug
+
+    body
+        include template/header.pug
+        block content
+        include template/footer.pug

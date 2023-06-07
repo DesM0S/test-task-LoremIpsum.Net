@@ -1,0 +1,26 @@
+mixin footerItem(src, alt, name)
+    .footer-item
+        .footer-item__img 
+            img(src=src, alt=alt)
+        .footer-item__name=name
+
+footer.footer 
+    .container 
+        .footer-container
+            span.footer__copyright © 2018 «LoremIpsum.net» Все права защищены.
+            span.footer__separator |
+            .footer-wallet 
+                +footerItem('./assets/icons/wallet/Qiwi wallet.svg', 'Qiwi wallet', 'Qiwi wallet')
+                +footerItem('./assets/icons/wallet/Yandex Money.svg', 'Yandex Money', 'Yandex Money')
+                +footerItem('./assets/icons/wallet/Web Money.svg', 'Web Money', 'Web Money')
+            span.footer__separator |
+            .footer-media   
+                a(href="mailto:info@ipsum228.com")
+                    +footerItem('./assets/icons/email.svg', 'email', 'info@ipsum228.com')
+                a(href="#")
+                    +footerItem('./assets/icons/VK.svg', 'VK', 'Мы вконтакте')
+
+
+include modals.pug
+// Scripts
+script(src="bundle.js")

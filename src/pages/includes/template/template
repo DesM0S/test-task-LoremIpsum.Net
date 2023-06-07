@@ -1,0 +1,5 @@
+include includes/template/head.pug
+body
+    include includes/template/header.pug
+    
+include includes/template/footer.pug

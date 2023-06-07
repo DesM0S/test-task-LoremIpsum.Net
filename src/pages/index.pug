@@ -1,0 +1,75 @@
+extends includes/page.pug
+
+mixin orderWay(src, alt, title)
+    .order-way__item
+        .order-way__img 
+            img(src=src, alt=alt)
+        h3.order-way__title=title
+
+
+block content 
+    section.main(style="background-image: url('./assets/bg-welcome.jpg')")
+        .container 
+            .main-container 
+                h1.main__title 
+                    span.titile--blue Lorem ipsum 
+                    span.titile--black dolor sit amet consectetur 
+                    span.titile--blue adipiscing
+                .main-list 
+                    p.main-list__desc At vero eos et accusamus et iusto odio dignissimos ducimus!
+                    ul.main-list__container 
+                        li.main-list__item Totam rem aperiam eaque ipsa
+                        li.main-list__item Sit voluptatem accusantium doloremque laudantium
+                        li.main-list__item Sed ut perspiciatis, unde omnis iste natus error
+                .main-btns 
+                    a.btn.btn--blue.main-btns__btn(href="#") заказать
+                    a.btn.btn--white.main-btns__btn(href="#") подробнее
+                    
+    section.order(style="background-image: url('./assets/bg-order.svg')")
+        .container
+            .order-container 
+                .order-info
+                    h2.order-info__title 
+                        span.titile--white Оформление
+                        span.titile--blue  Заказа
+                    p.order-info__desc Перед заполнением формы ознакомьтесь с нашей схемой работы!
+                .order-way 
+                    +orderWay('./assets/icons/order/search.svg', 'search', 'Lorem ipsum dolorsit amet')
+                    +orderWay('./assets/icons/order/percent.svg', 'percent', 'Сonsecteturadipiscing elit')
+                    +orderWay('./assets/icons/order/fileAdd.svg', 'fileAdd', 'Sed do eiusmod tempor')
+                    +orderWay('./assets/icons/order/mail.svg', 'mail', 'Esse cillum doloreeu fugiat')
+                    +orderWay('./assets/icons/order/money.svg', 'money', 'Excepteur sint occaecat cupidatat non proident')
+                form.order-form(action="" post="")
+                    .order-form-container 
+                        .order-form-container-line 
+                            .order-form-select
+                                .order-form-select__header
+                                    input.order-form-select__input(type="text" name="typeSistem")
+                                    span.order-form-select__selected Выберите тип системы 
+                                    span.arrow
+                                ul.order-form-select__options
+                                    li Sed ut perspiciatis
+                                    li  Nemo enim ipsam
+                                    li Et harum quidem
+                                    li  Temporibus autem
+                                    li taque earum rerum
+                                    li Sed ut perspiciatis
+                                    li  Nemo enim ipsam
+                                    li Et harum quidem
+                                    li  Temporibus autem
+                                    li taque earum rerum
+                            input.order-form__input(type="email" name="email" placeholder="Ваш e-mail" required)
+                            input.order-form__input(type="text" name="name" placeholder="Ваше имя" required)
+                        .order-form-container-line 
+                            .order-form-range
+                                .order-form-range__info 
+                                    .order-form-range__title Sed ut perspiciatis, unde omnis iste natus
+                                    .order-form-range__count 75 %
+                                input.order-form-range__input( type="range" min="0" max="100" name="size" value="50")
+                            label.order-form-file
+                                input(type='file' name='file').order-form-file__input
+                                .order-from-file__desc 
+                                    img(src="./assets/icons/order/file.svg", alt="file")
+                                    span Прикрепить файл
+
+                    input.btn.btn--blue.order__btn(type="submit" value="Отправить")
