@@ -5,7 +5,8 @@ import 'jquery-mask-plugin';
 window.$ = $;
 window.jQuery = $;
 
-// costum select
+// form 
+// input select
 $(document).ready(function () {
 	$('.order-form-select__header').click(function () {
 		$('.order-form-select__options').toggleClass('show');
@@ -42,10 +43,17 @@ $(document).ready(function () {
 });
 
 //input file
-$(document).ready(function() {
-	$('.order-form-file__input').change(function() {
-	  let fileName = $(this).prop('files')[0].name;
-	  $('.order-from-file__desc span').html(fileName);
+$(document).ready(function () {
+	$('.order-form-file__input').change(function () {
+		let fileName = $(this).prop('files')[0].name;
+		$('.order-from-file__desc span').html(fileName);
 	});
-  });
-  
+});
+
+//menu mobile
+$(document).ready(function () {
+	$('.header-burger').click(function () {
+		$(this).toggleClass('active');
+		$('.mobile-menu').toggleClass('active');
+	});
+});

@@ -2,8 +2,10 @@ extends includes/page.pug
 
 mixin orderWay(src, alt, title)
     .order-way__item
-        .order-way__img 
-            img(src=src, alt=alt)
+        .order-way__item-container
+            img(src="./assets/dots.svg", alt="....").order-way__dots
+            .order-way__img 
+                img(src=src, alt=alt)
         h3.order-way__title=title
 
 
@@ -24,7 +26,7 @@ block content
                 .main-btns 
                     a.btn.btn--blue.main-btns__btn(href="#") заказать
                     a.btn.btn--white.main-btns__btn(href="#") подробнее
-                    
+
     section.order(style="background-image: url('./assets/bg-order.svg')")
         .container
             .order-container 
@@ -34,6 +36,7 @@ block content
                         span.titile--blue  Заказа
                     p.order-info__desc Перед заполнением формы ознакомьтесь с нашей схемой работы!
                 .order-way 
+                    
                     +orderWay('./assets/icons/order/search.svg', 'search', 'Lorem ipsum dolorsit amet')
                     +orderWay('./assets/icons/order/percent.svg', 'percent', 'Сonsecteturadipiscing elit')
                     +orderWay('./assets/icons/order/fileAdd.svg', 'fileAdd', 'Sed do eiusmod tempor')
@@ -65,7 +68,7 @@ block content
                                 .order-form-range__info 
                                     .order-form-range__title Sed ut perspiciatis, unde omnis iste natus
                                     .order-form-range__count 75 %
-                                input.order-form-range__input( type="range" min="0" max="100" name="size" value="50")
+                                input.order-form-range__input( type="range" min="0" max="100" name="size" value="75")
                             label.order-form-file
                                 input(type='file' name='file').order-form-file__input
                                 .order-from-file__desc 

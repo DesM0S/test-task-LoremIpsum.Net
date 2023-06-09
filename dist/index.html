@@ -12,6 +12,11 @@
   <div class="container">
     <div class="header-container"><a class="header__logo" href="./"><img src="./assets/logo.svg" alt="LoremIpsum.Net"></a>
       <nav class="header-nav"> <a class="header-nav__link active" href="#">Бизнес</a><a class="header-nav__link" href="#">О нас</a><a class="header-nav__link" href="#">Цены</a><a class="header-nav__link" href="#">Оформить заказ</a></nav>
+      <div class="header-burger">	
+        <div class="header-burger__line"></div>
+        <div class="header-burger__line"></div>
+        <div class="header-burger__line"></div>
+      </div>
     </div>
   </div>
 </header>
@@ -40,23 +45,33 @@
           </div>
           <div class="order-way"> 
             <div class="order-way__item">
-              <div class="order-way__img"> <img src="./assets/icons/order/search.svg" alt="search"></div>
+              <div class="order-way__item-container"><img class="order-way__dots" src="./assets/dots.svg" alt="....">
+                <div class="order-way__img"> <img src="./assets/icons/order/search.svg" alt="search"></div>
+              </div>
               <h3 class="order-way__title">Lorem ipsum dolorsit amet</h3>
             </div>
             <div class="order-way__item">
-              <div class="order-way__img"> <img src="./assets/icons/order/percent.svg" alt="percent"></div>
+              <div class="order-way__item-container"><img class="order-way__dots" src="./assets/dots.svg" alt="....">
+                <div class="order-way__img"> <img src="./assets/icons/order/percent.svg" alt="percent"></div>
+              </div>
               <h3 class="order-way__title">Сonsecteturadipiscing elit</h3>
             </div>
             <div class="order-way__item">
-              <div class="order-way__img"> <img src="./assets/icons/order/fileAdd.svg" alt="fileAdd"></div>
+              <div class="order-way__item-container"><img class="order-way__dots" src="./assets/dots.svg" alt="....">
+                <div class="order-way__img"> <img src="./assets/icons/order/fileAdd.svg" alt="fileAdd"></div>
+              </div>
               <h3 class="order-way__title">Sed do eiusmod tempor</h3>
             </div>
             <div class="order-way__item">
-              <div class="order-way__img"> <img src="./assets/icons/order/mail.svg" alt="mail"></div>
+              <div class="order-way__item-container"><img class="order-way__dots" src="./assets/dots.svg" alt="....">
+                <div class="order-way__img"> <img src="./assets/icons/order/mail.svg" alt="mail"></div>
+              </div>
               <h3 class="order-way__title">Esse cillum doloreeu fugiat</h3>
             </div>
             <div class="order-way__item">
-              <div class="order-way__img"> <img src="./assets/icons/order/money.svg" alt="money"></div>
+              <div class="order-way__item-container"><img class="order-way__dots" src="./assets/dots.svg" alt="....">
+                <div class="order-way__img"> <img src="./assets/icons/order/money.svg" alt="money"></div>
+              </div>
               <h3 class="order-way__title">Excepteur sint occaecat cupidatat non proident</h3>
             </div>
           </div>
@@ -89,7 +104,7 @@
                     <div class="order-form-range__title">Sed ut perspiciatis, unde omnis iste natus</div>
                     <div class="order-form-range__count">75 %</div>
                   </div>
-                  <input class="order-form-range__input" type="range" min="0" max="100" name="size" value="50">
+                  <input class="order-form-range__input" type="range" min="0" max="100" name="size" value="75">
                 </div>
                 <label class="order-form-file">
                   <input class="order-form-file__input" type="file" name="file">
@@ -131,6 +146,11 @@
         </div>
       </div>
     </footer>
+<div class="mobile-menu">
+  <div class="container"> 
+    <div class="mobile-menu-container"><a class="header-nav__link active" href="#">Бизнес</a><a class="header-nav__link" href="#">О нас</a><a class="header-nav__link" href="#">Цены</a><a class="header-nav__link" href="#">Оформить заказ</a></div>
+  </div>
+</div>
     <!-- Scripts-->
     <script src="bundle.js"></script>
   </body>
