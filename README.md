@@ -1,7 +1,5 @@
-# test-task-LoremIpsum.Net
-# Просмотр -- https://desm0s.github.io/test-task-LoremIpsum.Net/dist/
+# Тестовое задание - LoremIpsum.Net
+# Демо - https://desm0s.github.io/test-task-LoremIpsum.Net/dist/
+Для создания этого проекта были использованы следующие технологии: Webpack, Pug, SCSS и jQuery. Проект имеет адаптивный дизайн, схожий с контейнерной системой Bootstrap.
 
-Было использованы webpug pug scss jquery
-Адаптив был сделан похожий на bootstrap container
-
-запуск проекта -  npm run watch
+Для запуска проекта выполните следующую команду: npm run watch.
